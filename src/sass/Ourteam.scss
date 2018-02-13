@@ -1,0 +1,256 @@
+.Otop-banner{
+	width: 100%;
+	img{
+		width: 100%;
+	}
+}
+.Ocontainer{
+	width: 100%;
+	background-color: #f2f2f2;
+	.Oteamcontant{
+		width: 100%;
+		text-align: center;
+		h2{
+			padding-top: 16px;
+
+			color: #3e4b59;
+			span{
+				font-weight: 200;
+
+			}
+		}
+		p{
+				padding: 25px;
+				color: #3e4b59;
+			}
+   }
+   .Ourteam{
+   	width: 94%;
+   	margin: 0 auto;
+   	background-color: #fff;
+   	height: auto;
+   	.wrapper6 {
+  word-wrap: break-word;
+  padding: 2rem 0;
+}
+
+.wrapper6,
+.container6 {
+  margin: 0 auto;
+}
+
+.container6 {
+	width: 100%;
+  overflow: hidden;
+  position: relative;
+  /*border-radius: 4px;*/
+  max-width: 74.5rem;
+  height: 35.1875rem;
+  line-height: 0;
+  .button {
+    border: 1px solid #fff;
+    opacity: .6;
+    outline: none;
+    background-color: #333;
+  }
+
+  .button:hover,
+  .button:focus {
+    opacity: 1;
+  }
+  .slideDiv{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+  .controls {
+  /*top: 70%;*/
+  left: 0;
+  z-index: 1;
+  bottom: 0%;
+  
+}
+  .slideDiv,
+.controls {
+  position: absolute;
+  .slide {
+  	float: left;
+    width: 100%;
+    padding: 10px;
+    height: auto;
+    box-sizing: border-box;
+
+
+    img {
+      width: 15%;
+      padding: 5px;
+    }
+  }
+}
+}
+   }
+
+
+
+   .Obutton{
+   	width: 100%;
+   	text-align: center;
+   	.Obutton1{
+   		padding: 12px 34px;
+   		background-color: transparent;
+   		border: 1px solid #3e4b59;
+   		margin: 24px 0px;
+   		font-size: 18px;
+   	}
+   }
+
+}
+
+
+/*OFF CANVAS CSS*/
+
+#modalBtn{
+  cursor: pointer; 
+}
+figure{
+  cursor: pointer;
+}
+#simpleModal{
+
+  overflow-x: hidden;
+}
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  left:0;
+  top:0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+}
+.modal:hover{
+  cursor: url('../images/closeBtn3.png'), auto;
+}
+.modal-content:hover{
+  cursor: default;
+}
+.modal-content{
+  background: #fff !important;
+  margin-left: 45%;
+  padding:10px;
+  width: 55%;
+  height: auto !important;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+  transform: translateX(800px);
+  animation: open 0.7s ease-in;
+  animation-fill-mode: forwards;
+}
+.closeBtn{
+  color:#ccc;
+  margin:15px 50px 0 0;
+  float:right;
+}
+.closeBtn:hover, .closeBtn:focus{
+  color:#000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.closeBtn a{
+  text-decoration: none;
+  color: #fff;
+}
+.modal-content{
+  padding: 0;
+  height: auto;
+
+  background-color: #fff;
+}
+/*.modal-header{
+  box-sizing: border-box;
+  height: 50px;
+  padding: 5px 0 5px 15px;
+  margin: 0;
+  background:#08c;
+}
+.modal-header h2{
+  padding-top: 10px;
+  color:#fff;
+  margin-left:20px;
+}*/
+
+#closeCanvas{
+  width: 95%;
+  text-align: right;
+}
+#closeCanvas span{
+background-color: #000;
+}
+#closeCanvas img{
+  padding-top: 10px;
+}
+.modal-body{
+  height: 100%;
+  background-color: #fff;
+  margin-left: 0% !important;
+}
+
+.modal-footer{
+  float: right;
+  padding:0 40px 0 0;
+  /* margin-left: 10px; */
+}
+
+.lowerDiv{
+  text-align: center;
+}
+.lowerDiv h4{
+  font-weight: lighter;
+  padding:0 0 10px 0;
+  margin:10px 0 0 0;
+}
+.lowerDiv p{
+  padding: 0 0 20px 0;
+}
+.Opara{
+  padding: 25px;
+}
+#paraFooter{
+  width: 100%;
+  padding: 0 40px;
+}
+#imgID{
+  margin:0 auto;
+}
+@keyframes open {
+from{transform:translateX(800px); }
+to{transform:translateX(0px);}
+}
+@keyframes close {
+from{transform:translateX(0px); }
+to{transform:translateX(800px);}
+}
+
+@media screen and (max-width: 615px)
+{
+
+  .modal-content{
+    width: 100%;
+    margin-left:0px; 
+  }
+  #livePreview{
+    display: none;
+  }
+  #modalHeader-h2{
+    margin-left: 0px;
+  }
+  .modal-footer{
+    display:none;
+  }
+  #paraFooter{
+    text-align: center;
+  }
+  .paraSide{
+    text-align: center;
+  }
+}

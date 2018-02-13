@@ -1,0 +1,27 @@
+Run 
+npm install(for first time),
+In terminal 
+gulp
+
+
+
+
+
+Personal Use
+npm init
+npm install --save-dev gulp
+
+//for gulp task to minify images
+npm install --save-dev gulp-imagemin
+
+//for gulp ugify(to convert js files)
+npm install --save-dev gulp-uglify
+
+//for gulp sass 
+npm install --save-dev gulp-sass
+
+//for gulp to concat 2 files
+npm install --save-dev  gulp-concat
+
+//for gulp server
+npm install gulp-connect --save-dev

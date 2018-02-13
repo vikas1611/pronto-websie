@@ -1,0 +1,211 @@
+body{
+
+}
+.Aboutimg{
+	width: 100%;
+	img{
+		width: 100%;
+	}
+}
+.steve{
+	width: 100%;
+	background-color: #FFF;
+	text-align: center;
+	padding-bottom: 20px;
+	p{
+		color: #3e4b59;
+		font-size: 25px;
+		padding: 25px 0px;
+
+	}
+	span{
+		color: #000;
+		padding-bottom: 15px;
+	}
+}
+.Whycompany{
+	width: 100%;
+	background-color: #f2f2f2;
+	.whycomp{
+		width: 100%;
+		padding: 20px 0px;
+		text-align: center;
+		p{
+			color: #3e4b59;
+			font-size: 28px;
+			font-weight: 400;
+			
+			span{
+				font-weight: bold;
+			}
+		}
+		.Apara{
+			padding: 20px;
+			font-size: 16px;
+			line-height: 1.4;
+			text-align: justify;
+		}
+
+	}
+	.Aagile{
+		width: 86%;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		padding-bottom: 20px;
+
+		.Aagile1{
+			width: 46%;
+			box-sizing: border-box;
+			background-color: #fff;
+			margin-right: 20px;
+			box-shadow:  3px 5px gray;
+			h2{
+				padding:10px;
+				color: #3e4b59;
+				margin: 10px 0px 0px 12px;
+			}
+			.Afloat{
+				width: 100%;
+				display: flex;
+				padding: 10px 10px 20px 10px;
+				box-sizing: border-box;
+
+			p{
+				padding: 10px;
+				text-align: justify;
+
+			}
+			img{
+				width: 25%;
+				height: 100px;
+				margin-top: 70px;
+			}
+		}
+
+		}
+		.Aagile2{
+			width: 46%;
+			box-sizing: border-box;
+			background-color: #fff;
+			margin-right: 0px;
+			box-shadow:  3px 5px gray;
+			h2{
+				padding:10px;
+				color: #3e4b59;
+				margin: 10px 0px 0px 12px;
+			}
+			.Afloat{
+				width: 100%;
+				display: flex;
+				padding: 10px 10px 20px 10px;
+				box-sizing: border-box;
+
+			p{
+				padding: 10px;
+				text-align: justify;
+
+			}
+			img{
+				width: 25%;
+				height: 100px;
+				margin-top: 70px;
+			}
+		}
+
+		}
+
+	}
+
+	.HappyClients{
+		width: 94%;
+		margin: 0 auto;
+		flex-wrap: wrap;
+		display: flex;
+		background-color: #fff;
+		padding: 10px;
+		justify-content: space-evenly;
+		.AwardWinning{
+			display: inline-block;
+			padding: 20px;
+			text-align: center;
+			border-right: 2px solid #f2f2f2;
+			p{
+				font-size: 40px;
+			}
+		}
+		.AwardWinning1{
+			display: inline-block;
+			padding: 20px;
+			text-align: center;
+			p{
+				font-size: 40px;
+			}
+		}
+	}
+
+}
+	.AgilePart{
+		width: 100%;
+		margin-top: 20px;
+		display: flex;
+		.Agilefloat{
+			width: 50%;
+			background-color: #fff;
+			img{
+				width: 100%;
+			}
+			h3{
+				margin-top: 100px;
+				padding-left: 30px;
+			}
+			p{
+				padding: 30px;
+			}
+
+		}
+	}
+
+@media screen and (max-width:875px){
+	.Whycompany .Aagile .Aagile1{
+		width: 100%;
+		margin-right: 0px;
+		margin-bottom: 10px;
+
+	}
+	.Whycompany .Aagile .Aagile2{
+		width: 100%;
+		margin-right: 0px;
+		margin-bottom: 10px;
+	}
+	.Whycompany .HappyClients{
+		display: none;
+
+	}
+	.Whycompany{ .Aagile{ .Aagile1{ .Afloat {
+		img{
+			display: none;
+		}
+
+		}}}}
+		.Whycompany{ .Aagile{ .Aagile2{ .Afloat {
+		img{
+			display: none;
+		}
+
+		}}}}
+
+
+
+	.AgilePart{
+		display: block;
+		.Agilefloat{
+			width: 90%;
+			margin: 0 auto;
+			h3{
+				margin-top: 20px;
+			}
+		}
+	}
+
+}

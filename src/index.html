@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="css/styles.css"> </head>
 
 <body>
@@ -14,17 +14,17 @@
       <div>
         <div id="home" class="top-head header">
           <div class="logo1">
-            <img class="logo" src="images/pronto_logo_website.png"> </div>
+            <img class="logo" id="logo_img" src="images/white_logo.png"> </div>
           <div class="wrapper1">
-            <label for='drop' class='toggle' style="position: absolute;right: 0px;">&#9776;</label>
+            <label for='drop' class='toggle' style="position: relative;right: 0px; float: right;">&#9776;</label>
             <input type='checkbox' id='drop' />
             <ul class="nav">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="About.html">About-Us</a></li>
-              <li><a href="">Services</a></li>
-              <li><a href="Ourteam.html">Build Your Team</a></li>
+              <li><a class="cool-link" href="index.html">Home</a></li>
+              <li><a class="cool-link" href="About.html">About-Us</a></li>
+              <li><a class="cool-link" href="services.html">Services</a></li>
+              <li><a class="cool-link" href="Ourteam.html">Build Your Team</a></li>
               <!-- <li><a href="#">Domains</a></li> -->
-              <li><a href="Hiring.html">Blog</a></li>
+              <li><a class="cool-link" href="Hiring.html">Blog</a></li>
              <!--  <li><a href="#">Contact</a></li> -->
               <!-- <li>
                 <img style="height: 20px;" src="images/fb.png"> </li>
@@ -36,34 +36,36 @@
           </div>
         </div>
       </div>
+      <div class="zoom-me">
       <video autoplay muted loop id="myVideo">
-        <source src="video/Services.webm" type="video/webm">
+        <source src="video/Services1.webm" type="video/webm">
+        <source src="video/Services.mp4" type="video/mp4">
       </video>
-     
+     </div>
       <div class="Domains display-none">
         <div class="dom">
-          <img src="images/finance_icon.png">
-          <span> Finance </span>
+          <img src="images/Finance.png">
+          <span> Fintech </span>
         </div>
         <div class="dom">
-          <img src="images/health_icon.png">
-          <span>Health Care </span>
+          <img src="images/Health.png">
+          <span>HealthCare </span>
         </div>
         <div class="dom">
-          <img src="images/finance_icon.png">
-          <span> Finance </span>
+          <img src="images/blockChain.png">
+          <span> BlockChainDevelopment  </span>
         </div>
         <div class="dom">
-          <img src="images/health_icon.png">
-          <span>Health Care </span>
+          <img src="images/Education.png">
+          <span>Education</span>
         </div>
         <div class="dom">
-          <img src="images/finance_icon.png">
-          <span> Finance </span>
+         <img src="images/Ecpert.png">
+          <span> CryptoCurrenceExpertise </span>
         </div>
         <div class="dom">
-          <img src="images/health_icon.png">
-          <span>Health Care </span>
+          <img src="images/Ecommerce.png"> 
+          <span>Ecommerce </span>
         </div>
       </div>
     </header>
@@ -74,7 +76,7 @@
         <span style="color: #a9afb2; font-size: 18px; font-weight: bold;">WE SOLVE THEM</span>
       </div>
     </div>
-    <div class="row image-res">
+     <div class="row image-res">
       <figure id="modalBtn" class="column pics image-hover img-zoom-in snip1273">
         <img style="width: 100%;" src="images/RIB.jpg">
         <figcaption>
@@ -82,18 +84,18 @@
           <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
         </figcaption> </figure>
         
-      <figure class="column pics image-hover img-zoom-in snip1273">
+      <figure id="modalBtn1" class="column pics image-hover img-zoom-in snip1273">
         <img style="width: 100%;" src="images/ofb4.png">
         <figcaption>
           <h3>Fletch Skinner</h3>
           <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
-        </figcaption> <a href="#"></a></figure>
-      <figure class="column pics image-hover img-zoom-in snip1273">
+        </figcaption> </figure>
+      <figure id="modalBtn2" class="column pics image-hover img-zoom-in snip1273">
         <img style="width: 100%;" src="images/RIB.jpg">
         <figcaption>
           <h3>Fletch Skinner</h3>
           <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
-        </figcaption> <a href="#"></a></figure>
+        </figcaption></figure>
     </div>
     <!-- <div class="row image-res">
       <figure class="column pics image-hover img-zoom-in snip1273">
@@ -161,11 +163,11 @@
     <div class="modal-header">
         <span class="closeBtn"><a href="index.html">
           <img src="images/preview_icon.png" alt="">
-          <span id="livePreview" style="color:#fff;font-weight:bold;font-size:22px;">&nbsp;<a href="http://www.zoltpay.com">Live preview</a></a>&nbsp;&nbsp;&nbsp;
+          <span id="livePreview" style="color:#fff;font-weight:bold;font-size:22px;">&nbsp;<a href="http://www.rentitbae.com">Live preview</a></a>&nbsp;&nbsp;&nbsp;
           <img src="images/close_icon.png" alt=""></span>
           </span>
 
-        <h2 id="modalHeader-h2">Zoltpay</h2>
+        <h2 id="modalHeader-h2">RentItBae</h2>
     </div>
     <div class="modal-body">
       <!-- Paragraph and Footer Box DIV -->
@@ -183,7 +185,86 @@
         <h4>Technology Used:</h4>
         <p>Design: HTML/CSS3/SAAS <span style="display:inline-block; width: 10px;"></span> JavaScript: Angular.js</p>
       </div>
-          <img src="images/img4.png"" alt="" style="height:100%;width:95%;margin:0 0 0 0;">
+      <div style="width: 100%;" class="slide-image1">
+      <div style="width: 84%; margin: 0 auto;">
+          <img src="images/RIB.png"" alt="" style="width:100%;"></div></div>
+          <!-- <img src="images/medicoCircle.png" alt="" style="height:100%;width:95%;margin:20px 0 0 0;">
+          <img src="images/medicoCircle.png" alt="" style="height:100%;width:95%;margin:20px 0 80px 5px;"> -->
+      </div>
+
+  </div>
+</div>
+
+
+<div id="simpleModal0" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+        <span class="closeBtn1"><a href="index.html">
+          <img src="images/preview_icon.png" alt="">
+          <span id="livePreview" style="color:#fff;font-weight:bold;font-size:22px;">&nbsp;<a href="http://www.rentitbae.com">Live preview</a></a>&nbsp;&nbsp;&nbsp;
+          <img src="images/close_icon.png" alt=""></span>
+          </span>
+
+        <h2 id="modalHeader-h2">Wyzex</h2>
+    </div>
+    <div class="modal-body">
+      <!-- Paragraph and Footer Box DIV -->
+      <div id="paraFooter">
+        <div class="paraSide">
+          <p>Zoltpay is India's first secured crytocurrency wallet which lets you store, buy & sell all the leading crypto currencies like Ethereum, Bitcoin & Bitcoin Cash in India. Zoltpay aims at providing you the best rates & guarantees your security, at all times. We are the only exchange in India which lets it's users to trade in multiple crytocurrencies in INR. </p>
+        </div>
+        <!-- <div class="footerSide"> -->
+          <div class="modal-footer">
+          <p>Date: Nov 2016</br>Client: Wyzex</p>
+          </div>
+        <!-- </div> -->
+      </div>
+      <div class="lowerDiv">
+        <h4>Technology Used:</h4>
+        <p>Design: HTML/CSS3/SAAS <span style="display:inline-block; width: 10px;"></span> JavaScript: Angular.js</p>
+      </div>
+      <div style="width: 100%;" class="slide-image1">
+      <div style="width: 84%; margin: 0 auto;" class="slide-image11">
+          <img src="images/wyzex.png"" alt="" style="width:100%;"></div>
+          <!-- <img src="images/medicoCircle.png" alt="" style="height:100%;width:95%;margin:20px 0 0 0;">
+          <img src="images/medicoCircle.png" alt="" style="height:100%;width:95%;margin:20px 0 80px 5px;"> -->
+          </div>
+      </div>
+
+  </div>
+</div>
+
+
+<div id="simpleModal1" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+        <span class="closeBtn2"><a href="index.html">
+          <img src="images/preview_icon.png" alt="">
+          <span id="livePreview" style="color:#fff;font-weight:bold;font-size:22px;">&nbsp;<a href="http://www.rentitbae.com">Live preview</a></a>&nbsp;&nbsp;&nbsp;
+          <img src="images/close_icon.png" alt=""></span>
+          </span>
+
+        <h2 id="modalHeader-h2">QuickJobs</h2>
+    </div>
+    <div class="modal-body">
+      <!-- Paragraph and Footer Box DIV -->
+      <div id="paraFooter">
+        <div class="paraSide">
+          <p>Zoltpay is India's first secured crytocurrency wallet which lets you store, buy & sell all the leading crypto currencies like Ethereum, Bitcoin & Bitcoin Cash in India. Zoltpay aims at providing you the best rates & guarantees your security, at all times. We are the only exchange in India which lets it's users to trade in multiple crytocurrencies in INR. </p>
+        </div>
+        <!-- <div class="footerSide"> -->
+          <div class="modal-footer">
+          <p>Date: Nov 2016</br>Client: Wyzex</p>
+          </div>
+        <!-- </div> -->
+      </div>
+      <div class="lowerDiv">
+        <h4>Technology Used:</h4>
+        <p>Design: HTML/CSS3/SAAS <span style="display:inline-block; width: 10px;"></span> JavaScript: Angular.js</p>
+      </div>
+      <div style="width: 100%;" class="slide-image1">
+      <div style="width: 84%; margin: 0 auto;">
+          <img src="images/quickJobs.png"" alt="" style="width:100%;"></div></div>
           <!-- <img src="images/medicoCircle.png" alt="" style="height:100%;width:95%;margin:20px 0 0 0;">
           <img src="images/medicoCircle.png" alt="" style="height:100%;width:95%;margin:20px 0 80px 5px;"> -->
       </div>
@@ -199,11 +280,11 @@
       <div class="row wrapper2">
         <article class=" column our-client">
           <div class="vl"></div>
-          <h2>
-            <span>Our</span> Client</h2>
-          <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the most populous metropolitan area in the world</p>
-          <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the most populous metropolitan area in the world</p>
-          <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the most populous metropolitan area in the world</p>
+          <h2>We Work With The Best</h2>
+          <p>As we say, we work with the best stands true when it comes to our projects. We feel proud to work with the best in market. A critical part of our business is detecting, evaluating and testing the best web solutions for our customers. </p>
+          <p>Our independence ensures our clients efficient and cost effective solutions, selecting the most appropriate partner and solution for each project. We believe that integrity in client dealings is an undisputable prerequisite for a successful and sustained business relationship. We operate a highly effective and efficient organization, focused on meeting client objectives. We provide our clients with the highest quality technology solutions, designed to help them grow their establishment. 
+</p>
+         
           <div class="demo-btn">
           <a href="DemoForm.html" target="_blank"><button>You Want a Demo?</button></a>
 
@@ -282,7 +363,101 @@
         </section>
         <!-- /wrapper -->
       </div>
-      <!-- <section class=" row services">
+      <!--  -->
+      <div class="row wrapper2">
+        <section class="wrapper6 column">
+          <div class="container6">
+            <!-- <div class="slideDiv">
+              <article class="slide active">
+                <img src="images/sapient_logo.png">
+                <img src="images/Mckinsey_logo.png">
+                <img src="images/scoopwhoop.png">
+                <img src="images/themobiadz_logo.png">
+                <img src="images/scoopwhoop.png">
+                <img src="images/themobiadz_logo.png">
+                <img src="images/Mckinsey_logo.png">
+                <img src="images/zoltpay_log.png">
+                <img src="images/scoopwhoop.png"> </article>
+              <article class="slide">
+               <img src="images/Mckinsey_logo.png">
+                <img src="images/Mckinsey_logo.png">
+                <img src="images/themobiadz_logo.png">
+                <img src="images/zoltpay_log.png">
+                <img src="images/sapient_logo.png">
+                <img src="images/scoopwhoop.png">
+                <img src="images/sapient_logo.png">
+                <img src="images/Mckinsey_logo.png">
+                <img src="images/zoltpay_log.png"> </article>
+              <article class="slide">
+                <img src="images/themobiadz_logo.png">
+                <img src="images/scoopwhoop.png">
+                <img src="images/zoltpay_log.png">
+                <img src="images/sapient_logo.png">
+                <img src="images/zoltpay_log.png">
+                <img src="images/scoopwhoop.png">
+                <img src="images/Mckinsey_logo.png">
+                <img src="images/sapient_logo.png">
+                <img src="images/scoopwhoop.png"> </article>
+            </div> -->
+            <div class="carousel" style="margin-top:0px;" data-flickity='{ "groupCells": true }'>
+  <div class="carousel-cell">
+    <img src="images/html5.png">
+    <img src="images/angularJs.png">
+
+  </div>
+  <div class="carousel-cell">
+    <img src="images/reactjs.png">
+    <img src="images/cassandra.png">
+  </div>
+  <div class="carousel-cell">
+      <img src="images/css.png">
+      <img src="images/java.png">
+  </div>
+  <div class="carousel-cell">
+     <img src="images/python.png">
+    <img src="images/Aerospike.png">
+  </div>
+  
+  
+  <div class="carousel-cell">
+     <img src="images/mongoDB.png">
+      <img src="images/neo4J.png">
+     
+  </div>
+  
+  <div class="carousel-cell">
+     <img src="images/elasticSearch.png">
+     <img src="images/fireBase.png">
+  </div>
+  
+ 
+ 
+</div>
+           
+          </div>
+          <!-- /container -->
+        </section>
+        <!-- /wrapper -->
+         <article class=" column our-client1">
+          <div class="vl"></div>
+          <h2>
+            Technology</h2>
+          <p>Our technology is only focused on what is called ‘The Best’.  Our Backend Technologies includes Java, NodeJs, Ruby On Rails, Liferay, Django, Big Data, Kafka, Scala, Python & Spark. 
+
+Pronto array is an expert when it comes to the Frontend Technologies such as HTML, CSS, Bootstrap, ReactJs, AngularJs, Angular4 & SASS. 
+ 
+</p>
+          <p>Similarly for Databases we use, MongoDB, SQL, Neo4J, Cassandra, Aerospike & Druid.
+
+In case of Mobile Technologies we work on development platforms - Android, iOS, React Native, PhoneGap, Ionic. 
+
+For Dev Ops - AWS, CHEF, PUPPET, KUBERNETES, TERRAFORM, ANSIBLE & JENKINS. 
+</p>
+         
+            </div>
+        </article>
+      </div>
+   <!-- <section class=" row services">
         <div class="our-services">
           <div class="vl"></div>
           <h2>
@@ -404,9 +579,28 @@
            <p>Agile Testing</p>
         </div>
         </div>
+        <div class="SecButton">
+        <a href="services.html"><button class="SecButton1">VIEW-MORE</button></a>
+        </div>
         </section>
 
-
+        <section id="map">
+        <div  style="position: relative;" class="clouddiv">
+        <div class="cloudPart">
+          HERE WE ARE
+<!-- 
+        
+          <img style="text-align: left; position: absolute;" src="images/cloud1.png">
+        
+        
+          <img style="text-align: right; top: 0px; right: 0px; " src="images/cloud2.png"> -->
+        </div>
+        
+        </div>
+          <div id="map_wrapper">
+            <div id="map_canvas" class="mapping"></div>
+        </div>
+        </section>
 
       <section class="office-address">
         <article class="touch">
@@ -448,7 +642,7 @@
           <img class="imgf" src="images/white_logo.png">
           <div class="hr"></div>
           <p>Our team is focuesd with a purpose & we believe in delivery right,the first time. we are committed with you on an ongoing basis even after the product is delivered. we have a prompt mechanism in place to ensure we are not missing on any of our client's query.</p>
-          <div class="Support1">
+         <!--  <div class="Support1">
             <div class="favicon-footer">
               <span>support@prontoitlabs.com</span>
               </br>
@@ -460,18 +654,38 @@
                 <li>
                   <img src="images/instagram2.png"> </li>
               </ul>
-            </div>
+            </div> -->
             <div class="buttonf">
-              <button>GET IN TOUCH</button>
+              <button> <a style="color: black" href="Hiring.html">GET IN TOUCH </a></button>
             </div>
           </div>
           <!-- <div class="Copyright"> Copyright 2018 by Pronto It Labs.All Rights Reserved </div> -->
         </article>
         <article class="footerRight column">
-          <h3>Our
-            <span> Services </span>
-          </h3>
-          <ul class="nav-r">
+          <div class="career">
+            <span> Career </span>
+          </div>
+            <div class="Support1">
+            <div class="favicon-footer">
+              <span>support@prontoitlabs.com</span>
+              </br>
+              <ul class="favicon-footer">
+                <li class="facebook">
+                <a href="https://www.facebook.com/prontoitlabs">
+                  <img src="images/fb1.png"></a> </li>
+                <li>
+                <a href="https://twitter.com/prontoitlabs">
+                  <img src="images/twitter1.png"></a> </li>
+                <li>
+                  <img src="images/instagram2.png"> </li>
+              </ul>
+            </div> 
+            <div class="clear"></div>
+          <div class="open-position"> Open <a href="Hiring.html">Position </a>in Pronto IT Labs
+            <div class="hr1"></div>
+          </div>
+
+          <!-- <ul class="nav-r">
             <li>Agile Website Development</li>
             <li>Mobile Development</li>
             <li>Responsive Design</li>
@@ -481,11 +695,8 @@
           <ul class="nav-r2">
             <li>Logo Designing</li>
             <li>Business Identify</li>
-          </ul>
-          <div class="clear"></div>
-          <div class="open-position"> Open Position in Pronto IT Labs
-            <div class="hr1"></div>
-          </div>
+          </ul> -->
+          
         </article>
         <div class="clear"></div>
         <div class="Copyright">
@@ -496,6 +707,7 @@
   </section>
 </body>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="js/main.js"></script>
 <script>
 ( function() {
@@ -512,6 +724,14 @@
     button[ i ].addEventListener( 'click', controls, false );
   }
 } )();
+
+
+// MAP API:
+// AIzaSyCLRbMjMH5Gm11nyARcU3hDVGPqcgTcRhE
+
+
+
+ 
 </script>
 
 </html>

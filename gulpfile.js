@@ -81,20 +81,25 @@ gulp.task('scripts', function(){
       .pipe(gulp.dest('dist/js'));
 });
 
-gulp.task('webserver', function() {
-  gulp.src('dist')
-    .pipe(webserver({
-      host: 'localhost',
-      port: 3030,
-      // livereload: true,
-      directoryListing: false,
-      open: true,
-      // fallback: './dist/index.html'
-    }));
+// gulp.task('webserver', function() {
+//   gulp.src('dist')
+//     .pipe(webserver({
+//       host: 'localhost',
+//       port: 3030,
+//       // livereload: true,
+//       directoryListing: false,
+//       open: true,
+//       // fallback: './dist/index.html'
+//     }));
+// });
+
+gulp.task('server', function() {
+  return gulp.src('dist/*.js')
+  .pipe(gulp.dest('dist/'));
 });
 
-gulp.task('default', ['message', 'copyHtml', 'imageMin', 'sass', 'scripts', 'fonts', 'video'], function(){
-	gulp.start(['webserver']);
+gulp.task('default', ['message', 'copyHtml', 'imageMin', 'sass', 'scripts', 'fonts', 'video', 'server'], function(){
+	// gulp.start(['webserver']);
   gulp.watch('src/js/*.js', ['scripts']);
   gulp.watch('src/images/*', ['imageMin']);
   gulp.watch('src/sass/*.scss', ['sass']);

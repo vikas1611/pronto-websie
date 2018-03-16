@@ -13,14 +13,15 @@
     <div class="topheader">
       <div id="home" class="top-head header">
         <div class="logo1">
-          <img class="logo" src="images/pronto_logo_website.png"> </div>
+        <a href="index.html">
+          <img class="logo" src="images/pronto_logo_website.png"> </a></div>
         <div class="wrapper1">
-          <label for='drop' class='toggle' style="position: absolute;right: 0px;">&#9776;</label>
+          <label for='drop' class='toggle' style="position: relative;right: 0px;float: right;">&#9776;</label>
           <input type='checkbox' id='drop' />
           <ul class="nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="About.html">About-Us</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="Ourteam.html">Build Your Team</a></li>
             <li><a href="Hiring.html">Blog</a></li>
            
@@ -137,17 +138,17 @@
     <section class="demoContent">
     <div class="demoForm">
     <h2><span style="color: #1775b5; font-size: 30px; font-weight: bold; margin-bottom: 40px;"> APPLY HERE</span></h2>
-    <form class="form1">
+    <form class="form1" method="POST" action="Hiring">
     <div class="mainGroup">
       <div class="group">      
-        <input type="text" required>
+        <input type="text" name="firstName" required>
         <span class="highlight"></span>
         <span class="bar"></span>
         <label id="label1">First Name</label>
       </div>
       
       <div class="group">      
-        <input type="text" required>
+        <input type="text" name="lastName" required>
         <span class="highlight"></span>
         <span class="bar"></span>
         <label id="label1">Last Name</label>
@@ -155,14 +156,14 @@
     </div>
     <div class="mainGroup">
       <div class="group">      
-        <input type="text" required>
+        <input type="text" required id="to" name="eMail">
         <span class="highlight"></span>
         <span class="bar"></span>
         <label id="label1">Email*</label>
       </div>
       
       <div class="group">      
-        <input type="text" required>
+        <input type="text" name="contact" required id="content">
         <span class="highlight"></span>
         <span class="bar"></span>
         <label id="label1">Contact Us*</label>
@@ -170,33 +171,31 @@
     </div>
         <div class="mainGroup">
       <div class="group">      
-        <input type="text" required>
+        <input type="text" name="experience" required>
         <span class="highlight"></span>
         <span class="bar"></span>
-        <label id="label1">Total Experience</label>
+        <label id="label1">Experience</label>
       </div>
       
-      <div class="group">      
+      <div class="group" >      
         <input type="text" required>
         <span class="highlight"></span>
         <span class="bar"></span>
         <label id="label1">CTC</label>
       </div>
     </div>
-<div class="mainGroup">
-<div class="dropdown">
-  <input class="dropdown-toggle" type="text">
-  <div class="dropdown-text">Choose your Option</div>
-  <ul class="dropdown-content">
-    <li><a href="#">Designer</a></li>
-    <li><a href="#">Front-End Developer</a></li>
-    <li><a href="#">Back-End Developer</a></li>
-      <li><a href="#">Tester</a></li>
-        <li><a href="#">Accountant</a></li>
-  </ul>
-</div>
-</div>
-    
+    <div class="mainGroup" id="subject">
+    <input list="browsers" name="browser" placeholder="Department">
+      <datalist id="browsers">
+        <option value="Designer">
+        <option value="Front-End-Developer">
+        <option value="Back-End-Developer">
+        <option value="Tester">
+        <option value="Full-stack">
+        <option value="content-writer">
+      </datalist>
+    </div>
+        
 
 
     
@@ -217,8 +216,7 @@
     </div>
       </div> -->
       <div class="Demo-button">
-      <button class="Dbutton">Request It</button></div></br>
-      <div class="clear"></div>
+      <button class="Dbutton" id="send_email">Request It</button></div></br>
 
       <p>lorem ipsum is a dummy text for type settings and for printing</p>
 
@@ -226,50 +224,42 @@
   </form>
        </div>
     </section>
-   <section class="footer row">
+     <section class="footer row">
     <article class="footerleft column">
       <img class="imgf" src="images/white_logo.png">
       <div class="hr"></div>
       <p>Our team is focuesd with a purpose & we believe in delivery right,the first time. we are committed with you on an ongoing basis even after the product is delivered. we have a prompt mechanism in place to ensure we are not missing on any of our client's query.</p>
-      <div class="Support1">
-        <div class="favicon-footer">
-          <span>support@prontoitlabs.com</span>
-          </br>
-          <ul class="favicon-footer">
-            <li>
-              <img src="images/fb1.png"> </li>
-            <li>
-              <img src="images/twitter1.png"> </li>
-            <li>
-              <img src="images/instagram2.png"> </li>
-          </ul>
-        </div>
+      
         <div class="buttonf">
           <button>GET IN TOUCH</button>
         </div>
       </div>
       <!-- <div class="Copyright"> Copyright 2018 by Pronto It Labs.All Rights Reserved </div> -->
     </article>
-    <article class="footerRight column">
-      <h3>Our
-        <span> Services </span>
-      </h3>
-      <ul class="nav-r">
-        <li>Agile Website Development</li>
-        <li>Mobile Development</li>
-        <li>Responsive Design</li>
-        <li>Single Page Modern Web Apps</li>
-        <li>Agile Testing</li>
-      </ul>
-      <ul class="nav-r2">
-        <li>Logo Designing</li>
-        <li>Business Identify</li>
-      </ul>
-      <div class="clear"></div>
-      <div class="open-position"> Open Position in Pronto IT Labs
-        <div class="hr1"></div>
-      </div>
-    </article>
+     <article class="footerRight column">
+          <div class="career">
+            <span> Career </span>
+          </div>
+            <div class="Support1">
+            <div class="favicon-footer">
+              <span>support@prontoitlabs.com</span>
+              </br>
+              <ul class="favicon-footer">
+                 <li>
+                <a href="https://www.facebook.com/prontoitlabs">
+                  <img src="images/fb1.png"></a> </li>
+                <li>
+                <a href="https://twitter.com/prontoitlabs">
+                  <img src="images/twitter1.png"></a> </li>
+                <li>
+                  <img src="images/instagram2.png"> </li>
+              </ul>
+            </div> 
+            <div class="clear"></div>
+          <div class="open-position"> Open <a href="Hiring.html">Position </a> in Pronto IT Labs
+            <div class="hr1"></div>
+          </div>
+          </article>
     <div class="clear"></div>
     <div class="Copyright">
       <div class="copyR"> Copyright 2018 by Pronto It Labs.All Rights Reserved </div>
@@ -347,6 +337,23 @@
     }
   };
 
+
+$(document).ready(function(){
+    var from,to,subject,text;
+    $("#send_email").click(function(){      
+        to=$("#to").val();
+        subject=$("#subject").val();
+        text=$("#content").val();
+        $("#message").text("Sending E-mail...Please wait");
+        $.get("http://localhost:8000/send",{to:to,subject:subject,text:text},function(data){
+        if(data=="sent")
+        {
+            $("#message").empty().html("Email is been sent at "+to+" . Please check inbox!");
+        }
+
+});
+    });
+});
 
 </script>
 

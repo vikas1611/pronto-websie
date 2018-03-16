@@ -12,16 +12,20 @@
 		text-align: center;
 		h2{
 			padding-top: 16px;
-
+      font-family: font_bold;
 			color: #3e4b59;
 			span{
 				font-weight: 200;
+        font-family: font_bold;
 
 			}
 		}
 		p{
 				padding: 25px;
 				color: #3e4b59;
+        font-family:font_light;
+
+
 			}
    }
    .Ourteam{
@@ -140,7 +144,7 @@ figure{
   margin-left: 45%;
   padding:10px;
   width: 55%;
-  height: auto !important;
+  height: 100%;
   box-shadow: 0 5px 8px 0 rgba(0,0,0,.2), 0 7px 20px 0 rgba(0,0,0,0.17);
   transform: translateX(800px);
   animation: open 0.7s ease-in;
@@ -208,12 +212,15 @@ background-color: #000;
   font-weight: lighter;
   padding:0 0 10px 0;
   margin:10px 0 0 0;
+  color: black;
 }
 .lowerDiv p{
   padding: 0 0 20px 0;
+  color: black;
 }
 .Opara{
   padding: 25px;
+  color: black;
 }
 #paraFooter{
   width: 100%;

@@ -14,8 +14,9 @@ body{
 	padding-bottom: 20px;
 	p{
 		color: #3e4b59;
-		font-size: 25px;
+		font-size: 20px;
 		padding: 25px 0px;
+		font-family: font_medium_italic;
 
 	}
 	span{
@@ -34,6 +35,7 @@ body{
 			color: #3e4b59;
 			font-size: 28px;
 			font-weight: 400;
+			font-family: font_bold;
 			
 			span{
 				font-weight: bold;
@@ -44,6 +46,7 @@ body{
 			font-size: 16px;
 			line-height: 1.4;
 			text-align: justify;
+			font-family: font_light;
 		}
 
 	}
@@ -55,12 +58,12 @@ body{
 		padding-bottom: 20px;
 
 		.Aagile1{
-			width: 46%;
+			width: 48%;
 			box-sizing: border-box;
 			background-color: #fff;
 			margin-right: 20px;
-			box-shadow:  3px 5px gray;
-			h2{
+			/*box-shadow:  3px 5px gray;
+*/			h2{
 				padding:10px;
 				color: #3e4b59;
 				margin: 10px 0px 0px 12px;
@@ -74,6 +77,8 @@ body{
 			p{
 				padding: 10px;
 				text-align: justify;
+				line-height: 1.5;
+				font-family: font_light;
 
 			}
 			img{
@@ -84,12 +89,23 @@ body{
 		}
 
 		}
+
+		.Aagile1:hover{
+			-webkit-box-shadow: 0px 0px 115px -31px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 115px -31px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 115px -31px rgba(0,0,0,0.75);
+		}
+		.Aagile2:hover{
+			-webkit-box-shadow: 0px 0px 115px -31px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 115px -31px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 115px -31px rgba(0,0,0,0.75);
+		}
 		.Aagile2{
-			width: 46%;
+			width: 48%;
 			box-sizing: border-box;
 			background-color: #fff;
 			margin-right: 0px;
-			box-shadow:  3px 5px gray;
+			/*box-shadow:  3px 5px gray;*/
 			h2{
 				padding:10px;
 				color: #3e4b59;
@@ -104,6 +120,8 @@ body{
 			p{
 				padding: 10px;
 				text-align: justify;
+				line-height: 1.5;
+				font-family: font_light;
 
 			}
 			img{
@@ -161,6 +179,9 @@ body{
 			}
 			p{
 				padding: 30px;
+				text-align: justify;
+				line-height: 1.5;
+				font-family: font_light;
 			}
 
 		}
